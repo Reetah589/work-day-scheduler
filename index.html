@@ -27,12 +27,27 @@
       <h1 class="display-3">Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
       <p id="currentDay" class="lead"></p>
+      <script>
+         var today = new Date();
+         var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+         var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+         var dateTime = date+' '+time;
+         document.getElementById("currentDay").innerHTML = dateTime;
+
+      </script>
     </header>
+
+
     <div class="container">
       <!-- Timeblocks go here -->
+      
+
+      
     </div>
+
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="../scheduler/script.js"></script>
   </body>
 </html>
