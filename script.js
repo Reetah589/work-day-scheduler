@@ -1,6 +1,7 @@
 // need to include the date and time
-// moment().format('MMMM Do YYYY, h:mm:ss a');}-
 // moment().format('dddd'); 
+var todayDate = moment().format('dddd,MMM Do YYYY');
+$("currentDay").html(todayDate);
 
 var saveButton= $("#save-btn");
 
